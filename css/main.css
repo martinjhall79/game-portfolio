@@ -1,0 +1,479 @@
+/* CSS Document */
+
+article, aside, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+h1, h2, h3, h4, p, a {
+	margin: 0;
+	padding: 0px;
+	font-weight: normal;
+	text-decoration: none;
+}
+ul, ol, dl, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+form, fieldset, input, textarea, select {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+img {
+	border: none;
+}
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 62.5%;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: #333;
+}
+/* Clearfix - Use sparingly when overflow:hidden cannot be used */
+
+.clear {
+	clear: both;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+html[xmlns] .clearfix {
+	display: block;
+}
+* html .clearfix {
+	height: 1%;
+}
+/* Fonts */
+
+h1 {
+	display: block;
+	text-align: center;
+	font-size: 1.6em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 4em;
+	font-weight: 100;
+	margin: 20px 0;
+}
+b, strong {
+	font-weight: normal;
+	font-weight: 700;
+}
+a:link, a:visited, a:active {
+	text-decoration: none;
+	color: #333
+}
+a:hover {
+	color: #00ebe3;
+}
+p {
+	font-size: 1.8em;
+	margin: 10px 0;
+}
+/* Light */
+
+.light-text {
+	color: white;
+}
+.light-text a:link, .light-text a:visited, .light-text a:active {
+	color: white
+}
+/* Generic */
+
+.responsive-width {
+	width: 1136px;
+	margin: 0 auto;
+}
+.center-content {
+	text-align: center;
+}
+.section-std {
+	width: 100%;
+	padding: 40px 0 60px 0;
+	text-align: center;
+}
+/* Header */
+
+
+nav#main-nav {
+	width: 100%;
+	height: 60px;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	box-shadow: 0px 4px 0px rgba(0,0,0,0.4);
+}
+nav#main-nav ul {
+	width: 100%;
+	text-align: center;
+}
+nav#main-nav ul li {
+	display: inline-block;
+}
+nav#main-nav ul li a:link, nav#main-nav ul li a:active, nav#main-nav ul li a:visited {
+	display: block;
+	height: 60px;
+	line-height: 60px;
+	font-size: 1.6em;
+	padding: 0 20px;
+	color: white;
+	transition: all .2s linear;
+	font-weight: 300;
+}
+nav#main-nav ul li a:hover {
+	color: #00ebe3;
+	transition: all .2s linear;
+}
+/* Main */
+
+section#main {
+	width: 100%;
+	height: 600px;
+	position: relative;
+	overflow: hidden;
+	background-image: url('../img/asset-realistic-snow-blizzard.gif');
+	background-position: center center;
+	background-size: cover;
+}
+video#main-video {
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+#main-bg-overlay {
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/black-60.png');
+	background-repeat: repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+#main-text {
+	display: table;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3;
+	text-align: center;
+}
+#main-text-inner {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	text-align: center;
+}
+#main-text h1 {
+	font-size: 5em;
+}
+#main-tagline {
+	display: block;
+	font-size: 2.8em;
+	font-weight: 300;
+}
+#main-contact {
+	display: block;
+	font-size: 3em;
+}
+/* About */
+
+section#about {
+	width: 100%;
+	text-align: center;
+	background-color: #f1f1f1;
+}
+/* Projects */
+
+section#projects {
+	width: 100%;
+	padding: 40px 0 60px 0;
+	text-align: center;
+}
+.projects-wrap {
+	width: 100%;
+	overflow: hidden;
+}
+.project-item {
+	width: 30%;
+	margin: 20px 1.5%;
+	float: left;
+}
+/*.project-item:nth-child(2) {
+	width: 30%;
+}*/
+.project-item img.project-image {
+	width: 100%;
+	margin-bottom: 10px;
+}
+.project-item h2 {
+	width: 100%;
+	font-size: 2.6em;
+	text-align: center;
+	margin: 10px 0 0 0;
+}
+.project-item .studio {
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	margin: 0 0 20px 0;
+}
+.project-item p {
+	font-size: 1.4em;
+	margin: 20px 0;
+	color: #333;
+}
+.project-item a:link, .project-item a:active, .project-item a:visited {
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 1.4em;
+	margin: 5px 0;
+	color: #666;
+}
+/* Assets */
+
+#assets {
+	width: 100%;
+	padding: 40px 0;
+	text-align: center;
+	background-color: #f1f1f1;
+}
+ul.asset-list {
+	width: 100%;
+	text-align: center;
+	margin: 20px 0;
+	overflow: hidden;
+}
+ul.asset-list li {
+	display: inline-block;
+	width: 202px;
+	height: 260px;
+	margin: 10px;
+	position: relative;
+	overflow: hidden;
+}
+ul.asset-list li img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+ul.asset-list li .asset-list-top {
+	display: table;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+ul.asset-list li:hover .asset-list-top {
+	background-image: none;
+	cursor: pointer;
+}
+ul.asset-list li a {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+	text-align: center;
+}
+ul.asset-list li a:hover {
+	cursor: pointer;
+}
+.asset-title {
+	display: block;
+	color: white;
+	font-size: 1.8em;
+	text-shadow: 0px 0px 6px black;
+}
+.asset-subtitle {
+	display: block;
+	color: white;
+	font-size: 1.6em;
+}
+.asset-title.dark {
+	color: #111;
+	text-shadow: none;
+}
+.asset-subtitle.dark {
+	color: #111;
+}
+a.button, a.button:link, a.button:active, a.button:visited {
+	display: inline-block;
+	padding: 12px 40px;
+	margin: 20px 0;
+	background-color: black;
+	color: white;
+	font-size: 1.8em;
+	font-weight: 300;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	-webkit-transition: all .1s linear;
+}
+a.button:hover {
+	color: black;
+	background-color: #00ebe3;
+	transition: all .1s linear;
+	-moz-transition: all .1s linear;
+	-webkit-transition: all .1s linear;
+}
+/* Resources */
+section#resources {
+	width: 100%;
+	padding: 40px 0 60px 0;
+	text-align: left;
+}
+.resource-item {
+	width:100%;
+	height:100%;
+	/*display:block;*/
+	/*margin-bottom:10px;*/
+	clear:both;
+	margin:20px 0px;
+	box-shadow:3px -3px 10px #CCC; 
+	padding:10px 3px;
+}
+.resource-desciption {
+	float:right;
+	width:66%;
+	height:100%;
+}
+.resource-item img {
+	margin-right:2%;
+}
+.resource-item a:link, .project-item a:active, .project-item a:visited {
+	font-size: 1.4em;
+	margin: 5px 0;
+	color: #666;
+}
+ul.resources-list li {
+	font-size:1.8em;
+	list-style:inside;
+	padding:1em;
+}
+/* Social */
+
+.social-icons {
+	margin: 40px 0 0 0;
+}
+.social-icons li {
+	display: inline-block;
+	margin: 0 10px;
+}
+.social-icons li a:link, .social-icons li a:active, .social-icons li a:visited {
+	display: block;
+	width: 32px;
+	height: 32px;
+	background-position: center center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+/* Contact */
+
+#contact {
+	width: 100%;
+	background-color: #111;
+	text-align: center;
+}
+/* Misc */
+
+.hidden {
+	display: none;
+}
+.white-bg {
+	background-color:white;
+}
+#section-header {
+	text-align:center;
+}
+
+/* Responsive */
+
+/* Small screen desktop and mobile */
+@media screen and (max-width:1136px) {
+}
+
+/* larger than mobile */
+@media screen and (min-width:741px) {
+.mobile-only {
+	display: none !important;
+}
+}
+
+/* mobile only */
+@media screen and (max-width:740px) {
+.mobile-hidden {
+	display: none !important;
+}
+.responsive-width {
+	width: 90%;
+	margin: 0 auto;
+}
+.section-std {
+	padding: 20px 0 30px 0;
+}
+nav#main-nav {
+	width: 100%;
+	height: auto;
+}
+nav#main-nav ul li a:link, nav#main-nav ul li a:active, nav#main-nav ul li a:visited {
+	height: 40px;
+	line-height: 40px;
+	font-size: 1.4em;
+	padding: 0 8px;
+}
+section#main {
+	height: 400px;
+}
+#main-tagline {
+	width: 80%;
+	font-size: 1.6em;
+	margin: 0 auto;
+}
+.project-item {
+	width: 90%;
+	margin: 20px auto 40px auto;
+	float: none;
+}
+ul.asset-list li {
+	display: inline-block;
+	float: none;
+	width: 90%;
+	height: auto;
+	margin: 10px auto;
+}
+}

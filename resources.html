@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title>Unity Game Development Resources & Tutorials</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+		
+		<!-- jQuery -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="/js/jquery.scrolly.js"></script>
+
+		<script type="text/javascript">
+		
+			$(document).ready(function(){
+				
+				$('.parallax').scrolly({bgParallax: true});
+				
+			});
+		
+			$(function() {
+			  $('a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html,body').animate({
+			          scrollTop: target.offset().top
+			        }, 1000);
+			        return false;
+			      }
+			    }
+			  });
+			  
+			});
+	
+		</script>	
+	</head>
+	<body>
+		
+		
+		<nav id="main-nav">
+			<ul>
+				<li><a href="index.html#main">Home</a></li>
+				<li><a href="index.html#about">About<span class="mobile-hidden"> Me</span></a></li>
+				<li><a href="index.html#projects">Projects</a></li>
+				<li><a href="resources.html">Resources</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+				<li><a href="#contact">Get in Touch</a></li>
+			</ul>
+		</nav>
+		
+		<!-- main -->
+		<section id="main">
+			<div id="main-text">
+				<div id="main-text-inner">
+					<h1 class="light-text">Game Dev Resources</h1>
+					<span id="main-tagline" class="light-text">Articles, Tutorials &amp; Assets To Help Us Make Better Games</span>
+					<p class="light-text">&#104;&#105;&#64;&#109;&#97;&#114;&#116;&#105;&#110;&#104;&#97;&#108;&#108;&#46;&#103;&#97;&#109;&#101;&#115;</p>
+				</div>
+			</div>
+			<div id="main-bg-overlay"></div>
+		</section>
+        
+		<!-- about -->
+		<section id="about" class="section-std">
+			<div class="responsive-width center-content">
+				
+				<h2>Let&rsquo;s make games!</h2>
+				<p>This is an archive of the best Unity and game dev resources I&rsquo;ve found to help me make better games. The collection includes tutorials, assets, tips and guides. I&rsquo;ve also included some official legacy Unity projects that I&rsquo;m hosting here so they don&rsquo;t disappear into the digital ether.</p>
+		</section>
+		
+		<!-- resources -->
+		<section id="resources" class="section-std">
+			<div class="responsive-width">
+                <h2>Tutorials</h2>
+                <p><cite>The best game development and Unity tutorials I&rsquo;ve used on my learning journey.</cite></p>
+				<div class="resources-wrap">
+                	<div class="resource-item">
+						<a href="https://medium.com/@rafalwilinski/tutorial-particle-sea-in-unity3d-70ff1350fa9e" target="_blank"><img class="project-image" src="img/resources/particle-sea-anim.gif" alt="Tutorials teaching how to create a particle sea effect with Unity" width="350px" height="200px"></a>
+                        <div class="resource-desciption">
+                            <h2>Particle Sea Tutorial</h2>
+                            <p>Learn how to create an animated particle sea effect in Unity, with this written tutorial by Rafal Wilinski. Shows how to manipulate a particle system with code and teaches you how to use Perlin noise.</p>
+                            <a href="https://medium.com/@rafalwilinski/tutorial-particle-sea-in-unity3d-70ff1350fa9e" target="_blank">Check out the particle sea tutorial by Rafal Wilinski</a>
+                        </div>
+					</div>		
+                    <div class="resource-item">
+						<a href="https://www.youtube.com/playlist?list=PLXily77ZuhLEC3vb5cq0uTEj20S0t5KY2" target="_blank"><img class="project-image" src="img/resources/lol-vfx.png" alt="League Of Legends graphical effects created in Unity" width="30%" height="30%"></a>
+                        <div class="resource-desciption">
+                            <h2>League Of Legends VFX</h2>
+                            <p>VFX artist Kevin Leroy has posted a bunch of fan-made League of Legends ability effects, which were made in Unity, on Reddit. These are easily some of the best Unity created VFX I've seen.</p>
+                            <a href="https://www.youtube.com/playlist?list=PLXily77ZuhLEC3vb5cq0uTEj20S0t5KY2" target="_blank">Check out the VFX on Kevin Leroy's YouTube channel</a>
+                        </div>
+                    </div>
+					<div class="resource-item">
+						<a href="https://www.youtube.com/watch?v=nhiFx28e7JY&list=PLFt_AvWsXl0cq5Umv3pMC9SPnKjfp9eGW&index=2" target="_blank"><img class="project-image" src="img/resources/pathfinding-tuts.png" alt="A* pathfinding in Unity tutorial series on YouTube.com" width="30%" height="30%"></a>
+                        <div class="resource-desciption">
+                            <h2>A* Pathfinding</h2>
+                            <p>An easy to understand and follow tutorial on implementing A* pathfinding with Unity by Sebastian Lague.</p>
+                            <a href="https://www.youtube.com/watch?v=nhiFx28e7JY&list=PLFt_AvWsXl0cq5Umv3pMC9SPnKjfp9eGW&index=2" target="_blank">Watch the A* pathfinding tutorial series on YouTube</a>
+                        </div>
+					</div>
+                    <div class="resource-item">
+						<a href="https://unity3d.com/learn/tutorials/s/procedural-cave-generation-tutorial" target="_blank"><img src="img/resources/procedural-caves.png" alt="Tutorials on how to create procedural caves for games with the Unity game engine" class="project-image" width="30%" height="30%"></a>
+                        <div class="resource-desciption">
+                            <h2>Procedural Caves</h2>
+                            <p>Another amazing tutorial series by Sebastian Lague on how to create procedural caves with Unity. This series was originally on YouTube but it is so good that Unity have actually included it in their official Learn section too.</p>
+                            <a href="https://unity3d.com/learn/tutorials/s/procedural-cave-generation-tutorial" target="_blank">Watch the tutorials at Unity Learn</a>
+                        </div>
+					</div>
+                    <div class="resource-item">
+						<a href="https://www.youtube.com/playlist?list=PLFt_AvWsXl0ctd4dgE1F8g3uec4zKNRV0" target="_blank"><img class="project-image" src="img/resources/top-down-shooter-tutorials.png" alt="Tutorial series on how to create a top down shooter game with Unity" width="30%" height="30%"></a>
+                        <div class="resource-desciption">
+                            <h2>Top Down Shooter</h2>
+                            <p>Another great tutorial series by Sebastian Lague on how to create a top down shooter. The first parts of the series are pretty standard but the procedural map generator featured in parts 8 through 13 is really cool.</p>
+                            <a href="https://www.youtube.com/playlist?list=PLFt_AvWsXl0ctd4dgE1F8g3uec4zKNRV0" target="_blank">Watch the tutorials on YouTube</a>
+                        </div>
+					</div>	
+                    <div class="resource-item">
+						<a href="http://catlikecoding.com/unity/tutorials/maze/" target="_blank"><img class="project-image" src="img/resources/procedural-maze-tutorials.png" alt="Tutorial on how to create a procedurally generated maze game" width="30%" height="30%"></a>
+                        <div class="resource-desciption">
+                            <h2>Procedural Maze</h2>
+                            <p>One of the best written tutorials I've ever followed, by Jasper Flick on creating a procedural maze. The resulting project is almost a fully playable game.</p>
+                            <a href="http://catlikecoding.com/unity/tutorials/maze/" target="_blank">See the tutorials on Jasper Flick's website</a>
+                        </div>
+					</div>	
+                    <div class="resource-item">
+						<a href="http://www.alanzucconi.com/2015/06/10/a-gentle-introduction-to-shaders-in-unity3d/" target="_blank"><img class="project-image" src="img/resources/unity-shader-tutorials.png" alt="Introduction to Unity shaders tutorials" width="30%" height="30%"></a>
+                        <div class="resource-desciption">
+                            <h2>Intro To Shaders</h2>
+                            <p>A really informative 5-part written tutorial series for developers with little to no experience with Unity shader coding.</p>
+                            <a href="http://www.alanzucconi.com/2015/06/10/a-gentle-introduction-to-shaders-in-unity3d/" target="_blank">See part one of the tutorials by Alan Zucconi</a>
+                        </div>
+					</div>	
+                    <div class="resource-item">
+						<a href="http://makegames.tumblr.com/post/42648699708/pixel-art-tutorial" target="_blank"><img class="project-image" src="img/resources/pixel-art-tutorials.png" alt="Learn to draw pixel art tutorials" width="30%" height="30%"></a>
+                        <div class="resource-desciption">
+                            <h2>Learn To Draw Pixel Art</h2>
+                            <p>An easy to follow ten step written tutorial series on how to draw pixel art by Derek Yu. Derek is the game dev who created Spelunky, which is one of my all time favourite games, which also makes him one of my favorite game developers.</p>
+                            <a href="http://makegames.tumblr.com/post/42648699708/pixel-art-tutorial" target="_blank">See the pixel art tutorials by Derek Yu</a>
+                        </div>
+					</div>	
+				</div>
+                
+                <h2>Assets</h2>
+                <p><cite>The most useful assets I've used like tools, models, textures and image effects that you can just drop into your Unity projects.</cite></p>
+				<div class="resources-wrap">
+                	<div class="resource-item">
+						<a href="https://github.com/Chman/SMAA" target="_blank"><img class="project-image" src="img/resources/antialiasing.png" alt="Subpixel morphological antialiasing effect for Unity" width="350px" height="200px"></a>
+                        <div class="resource-desciption">
+                            <h2>Subpixel Morphological Anti Aliasing</h2>
+                            <p>If you're using deferred shading, this is one of the best antialiasing currently available for Unity. Best of all it's completely free and open source. Created by Thomas Hourdel.</p>
+                            <a href="https://github.com/Chman/SMAA" target="_blank">Download it from Thomas's GitHub repository</a><br />
+                            <a href="http://forum.unity3d.com/threads/free-subpixel-morphological-antialiasing-smaa.323572/" target="_blank">See the Unity forum thread for a discussion about the antialiasing asset</a><br />
+                            <a href="https://www.assetstore.unity3d.com/en/#!/publisher/1627" target="_blank">Check out Thomas's high quality assets on the Unity asset store</a><br />
+                        </div>
+					</div>
+                    <div class="resource-item">
+						<a href="http://www.kode80.com/blog/2015/03/11/screen-space-reflections-in-unity-5/" target="_blank"><img class="project-image" src="img/resources/space-reflections-asset.jpg" alt="Free image effect for Unity game development" width="350px" height="200px"></a>
+                        <div class="resource-desciption">
+                            <h2>Screenspace Reflections</h2>
+                            <p>A free and open source space reflections image effect for Unity development, created by Ben Hopkins.</p>
+                            <a href="https://github.com/kode80/kode80SSR" target="_blank">Get the effect from Ben's Github</a><br />
+                            <a href="http://www.kode80.com/blog/2015/03/11/screen-space-reflections-in-unity-5/" target="_blank">Read about how the effect was implemented on Ben's blog</a>
+                        </div>
+					</div>
+                </div>	 
+                <h2>Supplemental Assets</h2>
+                <p><cite>Other useful assets that I'm copying from the Unity Educator Framework.</cite></p>
+                <p><strong>Textures</strong></p>
+                <p>
+                	<ul class="resources-list">
+                    	<li><strong>CG Textures</strong> (<a href="http://www.cgtextures.com" target="_blank">www.cgtextures.com</a>) The world's larget texture resource site. The site offers a plethora of high quality photo references that you can use to generate textures. In addition, this site offers a small selection of useful texture creation tutorials.</li>
+                        <li><strong>Texture King</strong> (<a href="http://www.textureking.com" target="_blank">www.textureking.com</a>) Offers textures in concrete, grunge, wood, stone/rock, metals, fabric, paint, rust, plastic, dirt/sand, liquids, glass and plaster.</li>
+                        <li><strong>2 Textured</strong> (<a href="http://www.2textured.com" target="_blank">www.2textured.com</a>) Good resource for weapon, food, animal, and vehicle textures and images among other things.</li>
+                        <li><strong>Stock Textures</strong> (<a href="http://www.stocktextures.com" target="_blank">www.stocktextures.com</a>) Free and open archive for high-quality, tilealbe textures.</li>
+                    </ul>
+                </p>
+                <p><strong>Audio Assets</strong></p>
+                <p>
+                	<ul class="resources-list">
+                    	<li><strong>Flashkit</strong> (<a href="http://www.flashkit.com/soundfx/" target="_blank">www.flashkit.com/soundfx</a>) List of shareware and freeware Sound FX in the following categories: ambience, communication, cartoon, creatures, domestic, electronic, industrial commercial, instruments, interfaces, mayhem, mechanical, nature, people, recreation, and transportation.</li>
+                        <li><strong>Indie Game Music</strong> (<a href="http://indiegamemusic.com" target="_blank">http://indiegamemusic.com</a>) Offers free music for games. Even though you can use the music for free, some of the files do require you to email the creator and let them know you are going to use the file(s). </li>
+                        <li><strong>Jamendo</strong> (<a href="http://www.jamendo.com" target="_blank">www.jamendo.com</a>) Jamendo offers free streaming and download of music published under Creative Commons licenses. On Jamendo, artists grant use of their music for private uses free of cost.</li>
+                        <li><strong>Free Sound Effects</strong> (<a href="http://www.freesoundeffects.com" target="_blank">www.freesoundeffects.com</a>) While many of the sounds on this site must be paid for, there is a good selection of free sound effect as well.</li>
+                    </ul>
+                </p> 
+                <p><strong>Model Assets</strong></p>
+                <p>
+                	<ul class="resources-list">
+                    	<li><strong>Turbo Squid</strong> (<a href="http://www.turbosquid.com/soundfx/" target="_blank">www.turbo.com/soundfx</a>) Offers models in a multitude of formats. There are models for purchase but also a great number of free models.</li>
+                        <li><strong>Archive 3D</strong> (<a href="http://www.3dxtras.com/index.asp" target="_blank">www.3dxtras.com</a>) A large variety of models in *.3DS and *.GSM formats.</li>
+                        <li><strong>Artist-3d</strong> (<a href="http://www.artist-3d.com/" target="_blank">www.artist-3d.com</a>) A free exchange directory of royalty free 3d models in these formats: 3ds, obj, pz3, pp2, max, mb.</li>
+                        <li><strong>Exchange 3D</strong> (<a href="http://www.exchange3d.com/FreeModels/cat_35.html" target="_blank">www.exchange3d.com</a>) While Exchange3d is primarily a commercial site, they do offer numerous pages of free, high quality models.</li>
+                    </ul>
+                </p>
+                <p><strong>Bug Tracking Software</strong></p> 
+                <p>
+                	<ul class="resources-list">
+                    	<li><strong>Buzilla</strong> (<a href="http://www.bugzilla.org/" target="_blank">www.bugzilla.org</a>) Bugzilla is a server-side bug tracking system that allows you to keep track of outstanding bugs in your product. You can track bugs and code changes, communicate with collaborators, submit and review patches, and manage quality assurance.</li>
+                        <li><strong>Landfill</strong> (<a href="http://landfill.bugzilla.org/" target="_blank">http://landfill.bugzilla.org/</a>) Landfill is the home of test installations for Bugzilla. These are demo installations that you can use to &lsquo;try out&rsquo; Bugzilla.</li>
+                    </ul>
+                </p>      
+			</div>
+		</section>
+		<section id="contact" class="section-std">
+			<div class="responsive-width">
+				
+				<h2 class="light-text">Get in touch</h2>
+				
+				<p class="light-text">I'm always interested to chat about exciting new project opportunities. Interested in working together? Feel free to get in touch!</p>
+				<p class="light-text">Send an email to &#104;&#105;&#64;&#109;&#97;&#114;&#116;&#105;&#110;&#104;&#97;&#108;&#108;&#46;&#103;&#97;&#109;&#101;&#115;<br>or connect with me on one of the channels below</p>
+				
+				<ul class="social-icons">
+                	<li><a class="social-icon" href="https://github.com/martinjhall79" target="_blank"><img src="img/github-white.png" alt="Find game developer Martin Hall on GitHub" /></a></li>
+					<li><a class="social-icon" href="https://twitter.com/_MartinHall" target="_blank"><img src="img/twitter-white.png" alt="Find game developer Martin Hall on Twitter"/></a></li>
+					<li><a class="social-icon" href="https://connect.unity.com/u/588bd57f090915002a61cce5" target="_blank"><img src="img/unity-white.png" alt="Find game developer Martin Hall on Unity Connect" /></a></li>
+					<li><a class="social-icon" href="https://www.linkedin.com/in/martin-hall-06a48554/" target="_blank"><img src="img/linkedin-white.png" alt="Find game developer Martin Hall on LinkedIn" /></a></li>
+					<li><a class="social-icon" href="https://www.youtube.com/channel/UC_bIquPU9jhwLh5qFP6s6NA" target="_blank"><img src="img/youtube-white.png" alt="Find game developer Martin Hall on YouTube" /></a></li>
+                    <li><a class="social-icon" href="http://steamcommunity.com/id/martinjhall" target="_blank"><img src="img/steam-white.png" alt="Find game developer Martin Hall on Steam" /></a></li>
+				</ul>
+			</div>
+		</section>	
+	</body>
+</html>
